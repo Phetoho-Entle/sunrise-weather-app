@@ -16,4 +16,23 @@
     border: none;
     border-radius: 4px;
     background-color: rgb(90, 162, 196);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#button:hover {
+    background-color: rgb(37, 113, 148);
+}
+
+#temperature {
+font-size: 48px;
+font-weight: 600px;
+
+}
+
+body {
+    background-image: url("https://images.pexels.com/photos/314726/pexels-photo-314726.jpeg");
+    background-size: cover;
+    backdrop-filter: blur(6px);
+    font-family: Arial, sans-serif;
 }
