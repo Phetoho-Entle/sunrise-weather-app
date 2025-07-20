@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final project</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <form >
+        <form id="search-form">
         <input type="text" placeholder="Enter a city..." required>
         <button type="submit">Search</button>
     </form>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <div id="temperature">24
+            <span id="degrees-celsius">°C</span>
+        </div>
+        <p>
+            <div id="description"></div>
+            <br>
+            Today's weather in <span id="city-name"></span>:
+        </p>
+
+    </main>
+    <footer>
+        This project was coded by <a href="#" target="_blank">Phetoho</a>, is availabe on <a href="#" target="_blank">GitHub</a> hosted on <a href="#" target="_blank">Netlify</a>
+    </footer>
+    <script src="index.js"></script>
 </body>
+
 </html>
