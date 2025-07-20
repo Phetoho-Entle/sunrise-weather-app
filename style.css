@@ -1,9 +1,10 @@
 #search-form {
     text-align: center;
+    padding: 10px;
 }
 
 #search-input {
-    width: 50%;
+    width: 30%;
     padding: 8px;
     font-size: 16px;
     border: none;
@@ -24,15 +25,36 @@
     background-color: rgb(37, 113, 148);
 }
 
-#temperature {
-font-size: 48px;
-font-weight: 600px;
-
-}
 
 body {
     background-image: url("https://images.pexels.com/photos/314726/pexels-photo-314726.jpeg");
     background-size: cover;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(10px);
     font-family: Arial, sans-serif;
+    padding: 40px;
+    margin: 120px;
+    border-radius: 20px;
+}
+
+#temperature {
+    display: inline-block;
+    font-size: 48px;
+}
+
+#description {
+    display: inline-block;
+    font-size: 18px;
+    padding: 30px;
+    
+}
+
+#weather-conditions {
+    
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
 }
