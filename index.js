@@ -14,7 +14,7 @@ function displayWeather(response) {
     let temperature = Math.round(response.data.temperature.current);
     temperatureElement.innerHTML = `${temperature}<span id="degrees">°</span>`;
 
-    let cityElement = document.querySelector("#city");
+    let cityElement = document.querySelector("#city-name");
     cityElement.innerHTML = response.data.city;
 
     let iconElement = document.querySelector("#weather-icon-img");

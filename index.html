@@ -1,52 +1,66 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final project</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final project</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 </head>
+
 <body>
 
-    <header>
-        <form id="search-form">
-        <input type="text" placeholder="Enter a city..." id="search-input" required>
-        <button type="submit" id="button">Search</button>
+  <header>
+    <form id="search-form">
+      <input type="text" placeholder="Enter a city..." id="search-input" required>
+      <button type="submit" id="button">Search</button>
     </form>
-    </header>
+  </header>
 
-    <main>
-        
-
-<div id="city"></div> <div id="date-time"></div>
-<br> 
-
-<div id="current-weather">
-  <div id="icon-and-temp">
-    <img src="..." alt="Weather icon" id="weather-icon-img" />
-    <div id="current-temperature">
-      <span id="temperature"></span><span id="degrees">°</span>
+  <main>
+    
+    <div id="city">
+      <i class="fa-solid fa-location-dot"></i>
+      <span id="city-name"></span>
     </div>
-  </div>
-  <div id="weather-conditions">few clouds</div>
-</div>
 
-<div id="weather-info">
- Humidity: <strong><span id="humidity">  </span></strong> | Wind: <strong><span id="wind-speed">  </span></strong>
-       </div> 
+    <div id="date-time"></div>
+    <br>
+
+    <div id="current-weather">
+      <div id="icon-and-temp">
+        <img src="..." alt="Weather icon" id="weather-icon-img" />
+        <div id="current-temperature">
+          <span id="temperature"></span><span id="degrees">°</span>
+        </div>
+      </div>
+      <div id="weather-conditions">few clouds</div>
+    </div>
+
+    <div id="weather-info">
+      Humidity: <strong><span id="humidity"></span></strong> |
+      Wind: <strong><span id="wind-speed"></span></strong>
+    </div>
 
     <hr id="divider">
 
     <div id="forecast" class="forecast-section"></div>
-    </main>
+  </main>
 
-    <footer>
-        This project was coded by <a href="https://github.com/Phetoho-Entle" target="_blank">Phetoho</a>, is available on <a href="https://github.com/Phetoho-Entle/final-project" target="_blank">GitHub</a> and hosted on <a href="https://sunrise-weather-app.netlify.app/" target="_blank">Netlify</a>
-    </footer>
+  <footer>
+    This project was coded by
+    <a href="https://github.com/Phetoho-Entle" target="_blank">Phetoho</a>,
+    is available on
+    <a href="https://github.com/Phetoho-Entle/final-project" target="_blank">GitHub</a>
+    and hosted on
+    <a href="https://sunrise-weather-app.netlify.app/" target="_blank">Netlify</a>
+  </footer>
 
-    <script src="index.js"></script>
+  <script src="index.js"></script>
 
 </body>
-
 </html>

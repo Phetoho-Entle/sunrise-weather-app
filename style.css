@@ -61,6 +61,10 @@ justify-content: left;
  font-weight: bold;
 }
 
+#city i {
+    margin-right: 10px;
+}
+
 #current-weather {
   display: flex;
   flex-direction: column;
