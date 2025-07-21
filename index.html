@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final project</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 </head>
 <body>
     <header>
@@ -15,27 +16,27 @@
     </header>
     <main>
         
-        <p>
-<div id="city"> <span id="location">📍</span> London</div> 
+
+<div id="city"></div> 
 
 <div id="date-time">Monday, 21 July</div>
 <br> 
-<div id="current-temperature">
+
 
 <span id="weather-icon">
   <img src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" alt="Weather icon" id="weather-icon-img" />
 </span>
-
-<span id="temperature">18<span id="degrees-celsius">°C</span>
+<div id="current-temperature">
+<span id="temperature"></span><span id="degrees">°</span>
 
 </div>
 
-<div id="weather-conditions">Moderate rain</div>
+<div id="weather-conditions"></div>
 
 <div id="weather-info">
- Humidity: <strong><span id="humidity"> 81%, </span></strong> | Wind: <strong><span id="wind-speed"> 7.2km/h </span></strong>
+ Humidity: <strong><span id="humidity">  </span></strong> | Wind: <strong><span id="wind-speed">  </span></strong>
        </div> 
-    </p>
+
     <hr id="divider">
 
     </main>

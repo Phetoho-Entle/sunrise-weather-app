@@ -48,35 +48,35 @@ body {
     display: flex;
     justify-content: right;
     font-size: 18px;
-    margin-top: -32px;
+    margin-top: -70px;
     font-weight: bold;
 }
 
 #city {
 
-justify-content: right;
+display: flex;
+justify-content: left;
  font-size: 18px;
- padding: 10px;
+ padding: 50px;
  font-weight: bold;
 }
 
 #weather-icon-img {
-    width: 150px;
-    height: 150px;
-    vertical-align: text-top;
-      
+    width: 200px;
+    height: 200px;
     
 }
 
-#temperature {
+#current-temperature {
     display: flex;
-    justify-content: end;
-    font-size: 70px;
+    justify-content: right;
+    font-size: 80px;
     font-weight: bold;
-    margin-top: -125px;
+    margin-top: -155px;
 }
 
-#degrees-celsius {
+
+#degrees {
     font-size: 40px;
     
 }
