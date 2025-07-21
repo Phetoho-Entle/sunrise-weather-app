@@ -8,28 +8,29 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 </head>
 <body>
+
     <header>
         <form id="search-form">
         <input type="text" placeholder="Enter a city..." id="search-input" required>
         <button type="submit" id="button">Search</button>
     </form>
     </header>
+
     <main>
         
 
 <div id="city"></div> <div id="date-time"></div>
 <br> 
 
-
-<span id="weather-icon">
-  <img src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png" alt="Weather icon" id="weather-icon-img" />
-</span>
-<div id="current-temperature">
-<span id="temperature"></span><span id="degrees">°</span>
-
+<div id="current-weather">
+  <div id="icon-and-temp">
+    <img src="..." alt="Weather icon" id="weather-icon-img" />
+    <div id="current-temperature">
+      <span id="temperature"></span><span id="degrees">°</span>
+    </div>
+  </div>
+  <div id="weather-conditions">few clouds</div>
 </div>
-
-<div id="weather-conditions"></div>
 
 <div id="weather-info">
  Humidity: <strong><span id="humidity">  </span></strong> | Wind: <strong><span id="wind-speed">  </span></strong>
@@ -39,10 +40,13 @@
 
     <div id="forecast" class="forecast-section"></div>
     </main>
+
     <footer>
         This project was coded by <a href="#" target="_blank">Phetoho</a>, is availabe on <a href="#" target="_blank">GitHub</a> hosted on <a href="#" target="_blank">Netlify</a>
     </footer>
+
     <script src="index.js"></script>
+    
 </body>
 
 </html>

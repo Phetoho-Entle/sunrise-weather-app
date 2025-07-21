@@ -35,8 +35,8 @@ body {
     background-size: cover;
     backdrop-filter: blur(10px);
     font-family: Arial, sans-serif;
-    padding: 30px;
-    margin-top: 20px;
+    padding: 25px;
+    margin-top: 15px;
     margin-right: 410px;
     margin-left: 410px;
     border-radius: 20px;
@@ -61,40 +61,48 @@ justify-content: left;
  font-weight: bold;
 }
 
+#current-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#icon-and-temp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 #weather-icon-img {
-    width: 200px;
-    height: 200px;
-    
+  width: 150px;
+  height:150px;;
 }
 
 #current-temperature {
-    display: flex;
-    justify-content: right;
-    font-size: 80px;
-    font-weight: bold;
-    margin-top: -155px;
+  font-size: 80px;
+  font-weight: bold;
+  
+}
+
+#weather-conditions {
+ padding: 30px;
+ margin-top: -50px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+ 
 }
 
 
 #degrees {
-    font-size: 40px;
-    
+vertical-align: text-top;
+font-size: 55px;
 }
 
-#weather-conditions {
-    display: flex;
-    justify-content: right;
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-    
-}
 
 #weather-info {
     text-align: center;
-    padding: 10px;
-    font-size: 18px;
-    margin-top: 20px;
 }
 
 #humidity {
@@ -111,6 +119,7 @@ justify-content: left;
   border: none;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.151);
+    margin: 20px 0;
 }
 
 .forecast-row {
