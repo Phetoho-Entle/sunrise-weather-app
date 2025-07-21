@@ -31,8 +31,8 @@ body {
     background-size: cover;
     backdrop-filter: blur(10px);
     font-family: Arial, sans-serif;
-    padding: 40px;
-    margin: 120px;
+    padding: 30px;
+    margin: 90px 200px;
     border-radius: 20px;
 }
 
