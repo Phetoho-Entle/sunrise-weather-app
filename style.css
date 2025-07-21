@@ -60,8 +60,11 @@ justify-content: right;
  font-weight: bold;
 }
 
-#weather-icon {
-    font-size: 120px;
+#weather-icon-img {
+    width: 150px;
+    height: 150px;
+    vertical-align: text-top;
+      
     
 }
 
@@ -89,25 +92,25 @@ justify-content: right;
 
 #weather-info {
     text-align: center;
-    padding: 30px;
-
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px;
 }
 
 #humidity {
-    color:rgb(248, 106, 5);
+    color:#181e86;
     font-weight: 700;
 }
 
 #wind-speed {
-    color: rgb(248, 106, 5);
+    color: #181e86;
     font-weight: 700;
 }
 
 #divider {
-      border: none;
+  border: none;
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.11); /* Light transparent white */
-  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 0.151);
 }
 
 
@@ -120,5 +123,5 @@ footer {
 
 a {
     text-decoration: none;
-    color: #000000;
+    color: #181e86;
 }
