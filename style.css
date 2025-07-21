@@ -71,7 +71,6 @@ justify-content: left;
 #icon-and-temp {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 #weather-icon-img {
