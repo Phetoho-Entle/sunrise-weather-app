@@ -30,6 +30,7 @@ function displayWeather(response) {
   let windSpeedElement = document.querySelector("#wind-speed");
   windSpeedElement.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
 
+  getForecast(response.data.coordinates);
 }
 
 function loadDefaultCity () {
@@ -49,13 +50,54 @@ let minutes = date.getMinutes();
   if (minutes < 10) minutes = `0${minutes}`;
   if (hours < 10) hours = `0${hours}`;
 
-  return `${day} ${hours}:${minutes}`;
+  return `${day}, ${hours}:${minutes}`;
 }
 
 let now = new Date();
 document.querySelector("#date-time").innerHTML = formatDate(now);
 
 loadDefaultCity();
+
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[date.getDay()];
+}
+
+function displayForecast(response) {
+  let forecast = response.data.daily;
+  let forecastHTML = `<div class="forecast-row">`;
+
+  forecast.forEach((day, index) => {
+    if (index < 7) {
+      forecastHTML += `
+        <div class="forecast-day">
+          <div class="forecast-date">${formatDay(day.time)}</div>
+          <img 
+            src="${day.condition.icon_url}" 
+            alt="${day.condition.description}" 
+            class="forecast-icon"
+          />
+          <div class="forecast-temp">
+            <span class="forecast-max">${Math.round(day.temperature.maximum)}°</span>
+            <span class="forecast-min">${Math.round(day.temperature.minimum)}°</span>
+          </div>
+        </div>`;
+    }
+  });
+
+  forecastHTML += `</div>`;
+  document.querySelector("#forecast").innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates) {
+  let apiKey = "739f904148cfa8boc86t8a8b426aac3f";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
+}
+
+
+
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit",search);
