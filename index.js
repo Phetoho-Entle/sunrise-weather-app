@@ -30,9 +30,6 @@ function displayWeather(response) {
   let windSpeedElement = document.querySelector("#wind-speed");
   windSpeedElement.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
 
-
-
-
 }
 
 function loadDefaultCity () {
@@ -42,6 +39,21 @@ function loadDefaultCity () {
     axios.get(apiUrl).then(displayWeather);
 
 }
+
+function formatDate(date) {
+let minutes = date.getMinutes();
+  let hours = date.getHours();
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  let day = days[date.getDay()];
+
+  if (minutes < 10) minutes = `0${minutes}`;
+  if (hours < 10) hours = `0${hours}`;
+
+  return `${day} ${hours}:${minutes}`;
+}
+
+let now = new Date();
+document.querySelector("#date-time").innerHTML = formatDate(now);
 
 loadDefaultCity();
 
