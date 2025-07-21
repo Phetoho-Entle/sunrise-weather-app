@@ -65,7 +65,7 @@ justify-content: left;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-top: -15px;
 }
 
 #icon-and-temp {
@@ -156,5 +156,6 @@ footer {
 
 a {
     text-decoration: none;
-    color: #181e86;
+    color: #030861;
+    font-weight: bold;
 }
